@@ -1,2 +1,4 @@
 # first_front
-Primeiros experimento da turma pycg2026.ap
+Primeiros experimento  com **front-end** da turma pycg2026.ap
+
+Vamos usar `HTML`, `CSS` e um pouquinho de `JavaScript` "_vanilla_".
