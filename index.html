@@ -1,124 +1,182 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Front</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /***********************************
+         * Folhas de Estilo do Frist Front *
+         ***********************************/
+
+        /***** Reset Geral *****/
+
+        /* Todas as caixas */
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        /* Todos links */
+        a {
+            text-decoration: none;
+            color: steelblue;
+        }
+
+        /* Todos os links com ponteiro sobre */
+        a:hover {
+            color: orangered;
+        }
+
+        /* Elementoas raiz */
+        html,
+        body {
+            position: relative;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+
+            /* Definir a fonte padrão e o tamanho */
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 16px;
+            /* 
+            O atributo acima define uma unidade "rem". 
+            Iso significa que 1rem = 16px, .5rem = 8px, 2rem = 32px
+            */
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            padding: .85rem;
+        }
+
+        /***** Cabeçalho *****/
+
+        /* Seleciona o elemento "header" que é filho direto do emelento div#wrap */
+        #wrap>header {
+            background-color: #ffa500;
+            padding: 1rem;
+        }
+
+        #wrap>header img {
+            display: block;
+            width: 5rem;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        #wrap>header>div {
+            display: flex;
+            align-items:center;
+        }
+
+        #wrap > header form {
+            margin-top: 1rem;
+        }
+
+         #wrap > header h1 {
+            font-size: 1.7rem;
+            
+         }
+    </style>
 </head>
 
 <body>
 
-    <body>
+    <!-- div conteiner que limita a largura do conteúdo -->
+    <div id="wrap">
 
-        <!-- div conteiner que limita a largura do conteúdo -->
-        <div id="wrap">
+        <!-- Cabeçalho -->
+        <header>
+            <div>
+                <!-- Logotipo clicável para a página inicial -->
+                <a href="index.html"><img src="img/logotipo.png" alt="Logotipo do First Front"></a>
 
-            <!-- Cabeçalho -->
-            <header>
+                <h1>First Front</h1>
+            </div>
 
-                <a href="index.html"><img src="img/Vermelho e Rosa Moderno Morango Do Amor Logotipo.png"
-                        alt="Logo tipo do meu front"></a>
-                <h1 style="display:none">First Front</h1>
-
-
-
-<!-- Formulário de pesquisa no site -->
-             <form action="https://www.google.com/search" method="get" target="">
+            <!-- Formulário de pesquisa no site -->
+            <form action="https://www.google.com/search" method="get" target="_blank">
                 <input type="search" name="q" required>
                 <button type="submit">🔎</button>
-             </form>
+            </form>
         </header>
 
+        <!-- Menu principal -->
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="conteudo.html">Conteúdo</a>
+            <a href="contatos.html">Contatos</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
 
+        <main>
 
+            <!-- Conteúdo principal -->
+            <section>
 
-            </header>
-            <hr>
+                <h2>Página Inicial</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur dicta provident
+                    aliquid harum ullam eveniet, sit, rerum nostrum tenetur impedit minus saepe mollitia voluptate fuga
+                    velit ratione tempora quae?</p>
+                <p>Links úteis:</p>
 
-            <!-- Menu principal -->
-            <nav>
-                <a href="index.html">Início</a>
-                <a href="conteudo.html">Conteúdo</a>
-                <a href="contatos.html">Contatos</a>
-                <a href="sobre.html">Sobre</a>
-            </nav>
-
-            <main>
-
-                <!-- Conteúdo principal -->
-                <section>
-
-                    <h2>Página Inicial</h2>
-                    <hr>
-                    <p>Não permita que o medo dite seus passos. Acredite no seu potencial, mesmo quando o caminho
-                        parecer incerto. A perseverança transforma impossíveis em conquistas, e cada movimento, por
-                        menor que seja, abre espaço para o próximo
-                        velit ratione tempora quae?</p>
-
-                    <p>Links úteis:</p>
-
-                    <!-- 
+                <!-- 
                 Lista de links externos que abrem em uma nova guia.
                 Use o atributo target="_blank" para abrir o link em outra guia
                 -->
-                    <ul>
-                        <li><a href="https://google.com" target="_blank">Google</a></li>
-                        <li><a href="https://links.lufer.click" target="_blank">Traquitanas</a></li>
-                        <li><a href="https://www.rj.senac.br" target="_blank">Senac</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="https://google.com" target="_blank">Google</a></li>
+                    <li><a href="https://links.lufer.click" target="_blank">Traquitanas</a></li>
+                    <li><a href="https://www.rj.senac.br" target="_blank">Senac</a></li>
+                </ul>
 
-                    <h3>Mais sobre alguma coisa</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime non odio dolorum in vero
-                        neque a magnam delectus, natus amet architecto repudiandae nisi consequatur eaque deserunt sequi
-                        repellendus debitis?</p>
+                <h3>Mais sobre alguma coisa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime non odio dolorum in vero
+                    neque a magnam delectus, natus amet architecto repudiandae nisi consequatur eaque deserunt sequi
+                    repellendus debitis?</p>
 
-                    <h4>Imagem externa</h4>
-                    <img src="https://picsum.photos/400/300" alt="Imagem aleatória">
+                <h4>Imagem externa</h4>
+                <img src="https://picsum.photos/400/300" alt="Imagem aleatória">
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis. Ipsum, doloremque,
-                        itaque
-                        inventore est ipsa neque nobis alias quaerat vitae saepe dolore aliquid soluta optio at quos
-                        suscipit aspernatur!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis. Ipsum, doloremque, itaque
+                    inventore est ipsa neque nobis alias quaerat vitae saepe dolore aliquid soluta optio at quos
+                    suscipit aspernatur!</p>
 
-                    <h4>Imagem interna</h4>
-                    <img src="img/tigre.png" alt="Tigre"><br>
-                    <h2>Supere suas Barreiras</h2>
-                    <p>
-                        Para realizar nossas metas precisamos vencer vários tipos de obstáculos que a vida nos impõe.
-                        Barreiras como falta de dinheiro, falta de tempo, excesso de estresse, entre outras dificuldades
-                        que põem à prova a nossa força de vontade e nos fazem dar ainda mais valor às nossas conquistas.
+                <h4>Imagem interna</h4>
+                <img src="img/vaca.png" alt="Vaquinha">
 
-                        Dificilmente algo que não demandou suor e empenho gerará prazer igual à conquista de algo que
-                        nos deixou diversas noites sem dormir.</p>
-                    <img src="img/borboleta.png" alt="borboleta">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto autem laudantium non debitis
+                    voluptates alias. Facere, molestiae voluptatum! Nostrum ipsa natus praesentium eos hic mollitia
+                    similique? Maiores, suscipit distinctio!</p>
 
-                    <p>Não permita que o medo dite seus passos. Acredite no seu potencial, mesmo quando o caminho
-                        parecer incerto. A perseverança transforma impossíveis em conquistas, e cada movimento, por
-                        menor que seja, abre espaço para o próximo.</p>
+            </section>
 
-                </section>
+            <!-- Conteúdo complementar -->
+            <aside>
+                <h3>Mais coisas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nostrum doloribus inventore
+                    asperiores cumque nulla.</p>
+            </aside>
 
-                <!-- Conteúdo complementar -->
-                <aside>
-                    <h3>Mais coisas</h3>
-                    <p> vida é feita de ciclos, e nenhum deles é definitivo. Quando tudo parece difícil, lembre-se:
-                        desafios não são barreiras, mas convites para crescer. Cada tentativa, mesmo imperfeita, vale
-                        mais do que qualquer plano perfeito que nunca saiu do papel.</p>
-                </aside>
+        </main>
 
-            </main>
-            <hr>
+        <!-- rodapé -->
+        <footer>
+            <a href="index.html">🏠</a>
+            <div>&copy; 2026 Joca da Silva</div>
+            <a href="#top">⬆️</a>
+        </footer>
 
-            <!-- rodapé -->
-            <footer>
-                <a href="index.html">🏡</a>
-               <div>&copy; 2026 Sandra Lopes</div> 
-                <a href="#top">⬆️</a>
-            </footer>
+    </div>
 
-        </div>
-
-    </body>
+</body>
 
 </html>
