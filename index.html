@@ -4,136 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Front</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-    <style>
-        /***********************************
-         * Folhas de Estilo do Frist Front *
-         ***********************************/
-
-        /***** Reset Geral *****/
-        /* 
-        Ajusta as tags para se comportar da mesma forma,
-        mesmo com diferenças entre navegadores.
-        +/
-
-        /* Todas as caixas */
-        * {
-            box-sizing: border-box;
-            outline: none;
-        }
-
-        /* Todos links */
-        a {
-            text-decoration: none;
-            color: steelblue;
-        }
-
-        /* Todos os links com ponteiro sobre */
-        a:hover {
-            color: orangered;
-        }
-
-        /* Elementoas raiz */
-        html,
-        body {
-            position: relative;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-
-            /* Define a fonte padrão e o tamanho */
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 16px;
-            /* 
-            O atributo acima define uma unidade "rem". 
-            Iso significa que 1rem = 16px, .5rem = 8px, 2rem = 32px
-            */
-        }
-
-        /* Remove margens fos titulos. */
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 0;
-            padding: .85rem 0;
-        }
-
-        /***** Cabeçalho *****/
-
-        /* Seleciona o elemento "header" que é filho direto do emelento div#wrap */
-        #wrap>header {
-            background-color: #ffa500;
-            padding: 1rem;
-        }
-
-        /* Apenas imagem dentro do header. */
-        #wrap>header img {
-            display: block;
-            width: 5rem;
-            height: auto;
-            border-radius: .4rem;
-        }
-
-        /* Elemento div que contém logo e nome do site. */
-        #wrap>header>div {
-            display: flex;
-            align-items: center;
-        }
-
-        /* Formulário de pesquisa no header. */
-        #wrap>header form {
-            margin-top: 1rem;
-            display: flex;
-        }
-
-        /* O campo de pesquisa cresce o máximo possível. */
-        #wrap>header form input {
-            flex-grow: 1;   
-            border-radius: .4rem 0 0 .4rem;         
-        }
-
-        #wrap>header form button {
-            border-radius: 0 .4rem .4rem 0;
-        }
-
-        /*  Seleciona todos os filhos do form. */
-        #wrap>header form>* {
-
-            /*Hherda as configurações da fonte dos elementos raiz (HTML, BODY). */
-            font-size: inherit;
-            font-family: inherit;
-
-            border: none;
-            padding: .5rem;
-            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
-       
-        }
-
-        /* Título (nome) do site. */
-        #wrap>header h1 {
-            color: #fff;
-            font-size: 2.5rem;
-            line-height: 1;
-            -webkit-text-stroke: .7px black;
-            padding: 0;
-            padding-left: .85rem;
-        }
-
-
-        /***** Classes de uso geral *****/
-
-        /* Imagens responsivas */
-        img.responsive {
-            max-width: 100%;
-            width: auto;
-        }
-        
-    </style>
+    <link rel="shortcut icon" href="img/img/vaca.png" type="image/x-icon">
+   <title>First Front</title>
 </head>
 
 <body>
@@ -160,26 +34,32 @@
 
         <!-- Menu principal -->
         <nav>
-             <a href="index.html">
+            <a ref="index.html" title="Página inicial">
                 <i class="fa-solid fa-house fa-fw"></i>
                 <span>Início</span>
             </a>
-            <a href="conteudo.html">
+            <a href="conteudo.html" title="Nosso conteúdo">
                 <i class="fa-solid fa-mug-hot fa-fw"></i>
                 <span>Conteúdo</span>
             </a>
-            <a href="contatos.html">
+            <a href="contatos.html" title="Faça contato">
                 <i class="fa-solid fa-comments fa-fw"></i>
                 <span>Contatos</span>
             </a>
-            <a href="sobre.html">
+            <a href="sobre.html" title="Sobre a gente">
                 <i class="fa-solid fa-circle-info fa-fw"></i>
                 <span>Sobre</span>
+            </a>
         </nav>
 
         <main>
+<section>
 
-            <!-- 
+                <h2>Página Inicial</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur dicta provident
+                    aliquid harum ullam eveniet, sit, rerum nostrum tenetur impedit minus saepe mollitia voluptate fuga
+                    velit ratione tempora quae?</p>
+                     <!-- 
             Conteúdo principal.
             No futuro, será gerado pelo back-end.
             -->
@@ -223,6 +103,8 @@
 
             </section>
 
+</section>
+           
             <!-- Conteúdo complementar -->
             <aside>
                 <h3>Mais coisas</h3>
