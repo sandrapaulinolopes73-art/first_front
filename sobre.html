@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon_bg.png">
+    <title>First Front</title>
+</head>
+
+<body>
+
+    <!-- div conteiner que limita a largura do 
+    conteúdo e permite outros efeitos. -->
+    <div id="wrap">
+
+        <!-- Cabeçalho -->
+        <header>
+            <div>
+                <!-- Logotipo clicável para a página inicial -->
+                <a href="index.html"><img src="img/logotipo.png" alt="Logotipo do First Front"></a>
+
+                <h1>First<br>Front</h1>
+            </div>
+
+            <!-- Formulário de pesquisa no site -->
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input type="search" name="q" required>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw fa-flip-horizontal"></i></button>
+            </form>
+        </header>
+
+        <!-- Menu principal -->
+        <nav>
+            <a href="index.html" title="Página inicial">
+                <i class="fa-solid fa-house fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="conteudo.html" title="Nosso conteúdo">
+                <i class="fa-solid fa-mug-hot fa-fw"></i>
+                <span>Conteúdo</span>
+            </a>
+            <a href="contatos.html" title="Faça contato">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="sobre.html" title="Sobre a gente">
+                <i class="fa-solid fa-circle-info fa-fw"></i>
+                <span>Sobre</span>
+            </a>
+        </nav>
+
+        <main>
+
+            <!-- 
+            Conteúdo principal.
+            No futuro, será gerado pelo back-end.
+            -->
+            <section>
+
+                <h2>Página Inicial</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur dicta provident
+                    aliquid harum ullam eveniet, sit, rerum nostrum tenetur impedit minus saepe mollitia voluptate fuga
+                    velit ratione tempora quae?</p>
+
+                <p>Links úteis:</p>
+
+                <!-- 
+                Lista de links externos que abrem em uma nova guia.
+                Use o atributo target="_blank" para abrir o link em outra guia
+                -->
+                <ul>
+                    <li><a href="https://google.com" target="_blank">Google</a></li>
+                    <li><a href="https://links.lufer.click" target="_blank">Traquitanas</a></li>
+                    <li><a href="https://www.rj.senac.br" target="_blank">Senac</a></li>
+                </ul>
+
+                <h3>Mais sobre alguma coisa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid maxime non odio dolorum in vero
+                    neque a magnam delectus, natus amet architecto repudiandae nisi consequatur eaque deserunt sequi
+                    repellendus debitis?</p>
+
+                <h4>Imagem externa</h4>
+                <img class="responsive" src="https://picsum.photos/400/300" alt="Imagem aleatória">
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, nobis. Ipsum, doloremque, itaque
+                    inventore est ipsa neque nobis alias quaerat vitae saepe dolore aliquid soluta optio at quos
+                    suscipit aspernatur!</p>
+
+                <h4>Imagem interna</h4>
+                <!-- A imagem esta na pasta "img". Atenção a este detalhe. -->
+                <img class="responsive" src="img/vaca.png" alt="Vaquinha">
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio iusto autem laudantium non debitis
+                    voluptates alias. Facere, molestiae voluptatum! Nostrum ipsa natus praesentium eos hic mollitia
+                    similique? Maiores, suscipit distinctio!</p>
+            </section>
+
+            <!-- Conteúdo complementar -->
+            <aside>
+                <h3>Mais coisas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nostrum doloribus inventore
+                    asperiores cumque nulla.</p>
+            </aside>
+
+        </main>
+
+        <!-- rodapé -->
+        <footer>
+            <a href="index.html" title="Ir para a página inicial"><i class="fa-solid fa-house fa-fw"></i></a>
+            <div>&copy; 2026 Joca da Silva</div>
+            <a href="#top" title="Ir para o topo da página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

@@ -10,49 +10,49 @@ mesmo com diferenças entre navegadores.
 
 /* Todas as caixas */
 * {
-    box-sizing: border-box;
-    outline: none;
+  box-sizing: border-box;
+  outline: none;
 }
 
 /* Todos links */
 a {
-    text-decoration: none;
-    color: steelblue;
+  text-decoration: none;
+  color: steelblue;
 }
 
 /* Todos os links com ponteiro sobre */
 a:hover {
-    color: orangered;
+  color: orangered;
 }
 
 /* Elementoas raiz */
 html,
 body {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 
-    /* Define a fonte padrão e o tamanho */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    /* 
+  /* Define a fonte padrão e o tamanho */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  /* 
     O atributo acima define uma unidade "rem". 
     Iso significa que 1rem = 16px, .5rem = 8px, 2rem = 32px
     */
 
-    /* Sticky footer */
-    min-height: 100%;
+  /* Sticky footer */
+  min-height: 100%;
 }
 
 /* Fundo da página */
 body {
-    background-image: url('../img/bg01.png');
-    background-color: rgb(0, 63, 0);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url("../img/bg01.png");
+  background-color: rgb(0, 63, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Remove margens fos titulos. */
@@ -62,168 +62,165 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
-    padding: .85rem 0;
+  margin: 0;
+  padding: 0.85rem 0;
 }
 
 /***** Elemento #wrap *****/
 
 #wrap {
-
-    /* Sticky footer */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  /* Sticky footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /***** Cabeçalho *****/
 
 /* Seleciona o elemento "header" que é filho direto do emelento div#wrap */
-#wrap>header {
-    background-color: #ffa500;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    transition: .2s;
+#wrap > header {
+  background-color: #ffa500;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
 }
 
 /* Apenas imagem dentro do header. */
-#wrap>header img {
-    display: block;
-    width: 5rem;
-    height: auto;
-    border-radius: .4rem;
+#wrap > header img {
+  display: block;
+  width: 5rem;
+  height: auto;
+  border-radius: 0.4rem;
 }
 
 /* Elemento div que contém logo e nome do site. */
-#wrap>header>div {
-    display: flex;
-    align-items: center;
+#wrap > header > div {
+  display: flex;
+  align-items: center;
 }
 
 /* Formulário de pesquisa no header. */
-#wrap>header form {
-    margin-top: 1rem;
-    display: flex;
+#wrap > header form {
+  margin-top: 1rem;
+  display: flex;
 }
 
 /* O campo de pesquisa cresce o máximo possível. */
-#wrap>header form input {
-    flex-grow: 1;
-    border-radius: .4rem 0 0 .4rem;
+#wrap > header form input {
+  flex-grow: 1;
+  border-radius: 0.4rem 0 0 0.4rem;
 }
 
-#wrap>header form button {
-    border-radius: 0 .4rem .4rem 0;
+#wrap > header form button {
+  border-radius: 0 0.4rem 0.4rem 0;
 }
 
 /*  Seleciona todos os filhos do form. */
-#wrap>header form>* {
+#wrap > header form > * {
+  /*Hherda as configurações da fonte dos elementos raiz (HTML, BODY). */
+  font-size: inherit;
+  font-family: inherit;
 
-    /*Hherda as configurações da fonte dos elementos raiz (HTML, BODY). */
-    font-size: inherit;
-    font-family: inherit;
-
-    border: none;
-    padding: .5rem;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .2);
+  border: none;
+  padding: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Título (nome) do site. */
-#wrap>header h1 {
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 1;
-    -webkit-text-stroke: .7px black;
-    padding: 0;
-    padding-left: .85rem;
+#wrap > header h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1;
+  -webkit-text-stroke: 0.7px black;
+  padding: 0;
+  padding-left: 0.85rem;
 }
 
 /***** Menu principal *****/
 
-#wrap>nav {
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: flex-end;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+#wrap > nav {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-#wrap>nav a {
-    padding: .8rem .5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: .3rem;
-    color: white;
-    transition: .2s;
+#wrap > nav a {
+  padding: 0.8rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  transition: 0.2s;
 }
 
 /* Somente o primeiro filho <a> do <nav> */
-#wrap>nav a:first-child {
-    margin-right: auto;
+#wrap > nav a:first-child {
+  margin-right: auto;
 }
 
 /* Quando o cursor do mouse está sobre */
-#wrap>nav a:hover {
-    background-color: white;
-    color: black;
+#wrap > nav a:hover {
+  background-color: white;
+  color: black;
 }
 
-#wrap>nav i {
-    font-size: 2rem;
+#wrap > nav i {
+  font-size: 2rem;
 }
 
 /***** Rodapé *****/
 
-#wrap>footer {
-    background-color: rgb(100, 98, 92);
-    color: #f8f2f2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+#wrap > footer {
+  background-color: rgb(100, 98, 92);
+  color: #f8f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-#wrap>footer a {
-    padding: .3rem;
-    color: #241f1f;
-    transition: .2s;
+#wrap > footer a {
+  padding: 0.3rem;
+  color: #241f1f;
+  transition: 0.2s;
 }
 
-#wrap>footer a:hover {
-    background-color: #fff;
-    color: black;
+#wrap > footer a:hover {
+  background-color: #fff;
+  color: black;
 }
 
-#wrap>footer i {
-    font-size: 1.8rem;
+#wrap > footer i {
+  font-size: 1.8rem;
 }
-
 
 /***** Conteúdo principal *****/
 
-#wrap>main {
-    /* Sticky footer */
-    flex: 1;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+#wrap > main {
+  /* Sticky footer */
+  flex: 1;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-#wrap>main section,
-#wrap>main article {
-    padding: 0 1.5rem;
-    background-color: rgba(255, 255, 255, 0.9);
+#wrap > main section,
+#wrap > main article {
+  padding: 0 1.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
 
-    /* Sticky footer */
-    flex: 1;
+  /* Sticky footer */
+  flex: 1;
 }
 
-#wrap>main aside {
-    background-color: rgba(222, 222, 222, .9);
-    padding: 0 1rem;
+#wrap > main aside {
+  background-color: rgba(222, 222, 222, 0.9);
+  padding: 0 1rem;
 }
 
 /********************************/
@@ -232,8 +229,8 @@ h6 {
 
 /* Imagens responsivas crescem até o tamanho original */
 img.responsive {
-    max-width: 100%;
-    width: auto;
+  max-width: 100%;
+  width: auto;
 }
 
 /**************************/
@@ -242,54 +239,55 @@ img.responsive {
 
 /***** Telas de 576px ou mais *****/
 @media screen and (min-width: 576px) {
+  /**** HEADER *****/
+  #wrap > header {
+    /* Elementos lado-a-lado */
+    flex-direction: row;
+    /* Na linha central */
+    align-items: center;
+    /* Afastados */
+    justify-content: space-between;
+  }
 
-    /**** HEADER *****/
-    #wrap>header {
-        /* Elementos lado-a-lado */
-        flex-direction: row;
-        /* Na linha central */
-        align-items: center;
-        /* Afastados */
-        justify-content: space-between;
-    }
-
-    #wrap>header>div {
-        /* Logo e título crescem o máximo possível */
-        flex-grow: 1;
-    }
+  #wrap > header > div {
+    /* Logo e título crescem o máximo possível */
+    flex-grow: 1;
+  }
 }
 
 /***** Telas de 640px ou mais *****/
 @media screen and (min-width: 640px) {
+  /***** MENU PRINCIPAL *****/
+  #wrap > nav a {
+    /* Elementos lado-a-lado */
+    flex-direction: row;
+    /* Ajusta o preenchimento */
+    padding: 0.8rem 1rem;
+  }
 
-    /***** MENU PRINCIPAL *****/
-    #wrap>nav a {
-        /* Elementos lado-a-lado */
-        flex-direction: row;
-        /* Ajusta o preenchimento */
-        padding: .8rem 1rem;
-    }
+  #wrap > nav i {
+    /* Diminui ícones */
+    font-size: 1.4rem;
+  }
 
-    #wrap>nav i {
-        /* Diminui ícones */
-        font-size: 1.4rem;
-    }
-
-}
 
 @media screen and (min-width: 768px) {
+  /***** CONTEÚDO PRINCIPAL *****/
+  #wrap > main {
+    flex-direction: row;
+  }
 
-    /***** CONTEÚDO PRINCIPAL *****/
-    #wrap>main {
-        flex-direction: row;
-    }
+  #wrap > main article {
+  }
+}
+#wrap > main aside {
 
-    #wrap>main section,
-    #wrap>main article {}
 
-    #wrap>main aside {
-        flex-basis: 250px;
-        max-width: 250px;
-        min-height: 250px;
-    }
+
+flex-basis: 250px;
+  max-width: 250px;
+  min-height: 250px;{
+
+
+
 }

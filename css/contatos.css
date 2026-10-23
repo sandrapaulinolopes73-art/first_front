@@ -1,0 +1,77 @@
+/**************************************************/
+/***** FOLHAS DE ESTILO DA PÁGINA DE CONTATOS *****/
+/**************************************************/
+
+article form {
+  max-width: 500px;
+  margin: auto;
+}
+
+article form label {
+  display: block;
+  padding: 0.25rem 0.5rem;
+}
+
+article form input,
+article form textarea,
+article form button {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+}
+
+article form input,
+article form textarea {
+  width: 100%;
+  background-color: rgb(254, 220, 220);
+  border: 1px solid red;
+  border-bottom: 3px solid red;
+}
+
+article form button {
+  padding: 0.5rem 1rem;
+  background-color: grey;
+  color: white;
+  cursor: not-allowed;
+  /* Bloqueia cliques no elemento */
+  pointer-events: none;
+}
+
+article form textarea {
+  resize: vertical;
+}
+
+/* Quando o campo for válido */
+article form input:valid,
+article form textarea:valid {
+  background-color: rgb(221, 255, 221);
+  border: 1px solid green;
+  border-bottom: 3px solid green;
+}
+
+/* Libera o botão de envio */
+article form:valid button {
+  background-color: steelblue;
+  cursor: pointer;
+  /* Desbloqueia cliques no elemento */
+  pointer-events: all;
+}
+
+aside ul {
+    list-style: none;
+    line-height: 3;
+    padding-left: 1rem;
+}
+
+aside ul a {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+aside ul i {
+    font-size: 2rem;
+}

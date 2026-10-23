@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon_bg.png">
+    <link rel="stylesheet" href="css/contatos.css">
+    <title>First Front - Faça contato</title>
+</head>
+
+<body>
+
+    <!-- div conteiner que limita a largura do 
+    conteúdo e permite outros efeitos. -->
+    <div id="wrap">
+
+        <!-- Cabeçalho -->
+        <header>
+            <div>
+                <!-- Logotipo clicável para a página inicial -->
+                <a href="index.html"><img src="img/logotipo.png" alt="Logotipo do First Front"></a>
+
+                <h1>First<br>Front</h1>
+            </div>
+
+            <!-- Formulário de pesquisa no site -->
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <input type="search" name="q" required>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass fa-fw fa-flip-horizontal"></i></button>
+            </form>
+        </header>
+
+        <!-- Menu principal -->
+        <nav>
+            <a href="index.html" title="Página inicial">
+                <i class="fa-solid fa-house fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="conteudo.html" title="Nosso conteúdo">
+                <i class="fa-solid fa-mug-hot fa-fw"></i>
+                <span>Conteúdo</span>
+            </a>
+            <a href="contatos.html" title="Faça contato">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="sobre.html" title="Sobre a gente">
+                <i class="fa-solid fa-circle-info fa-fw"></i>
+                <span>Sobre</span>
+            </a>
+        </nav>
+
+        <main>
+
+            <!-- 
+            Conteúdo principal.
+            No futuro, será gerado pelo back-end.
+            -->
+            <article>
+
+                <h2>Faça Contato</h2>
+                <p>Preencha os campos abaixo para entrar em contato conosco.</p>
+
+                <p class="text-red center"><small><em>Todos os campos são obrigatórios.</em></small></p>
+
+                <form>
+
+                    <p>
+                        <label for="contatoNome">Nome:</label>
+                        <input type="text" name="contato-nome" id="contatoNome" required minlength="3">
+                    </p>
+
+                    <p>
+                        <label for="contatoEmail">E-mail:</label>
+                        <input type="email" name="conta-email" id="contatoEmail" required>
+                    </p>
+
+                    <p>
+                        <label for="contatoAssunto">Assunto:</label>
+                        <input type="text" name="contat-assunto" id="contatoAssunto" required minlength="4">
+                    </p>
+
+                    <p>
+                        <label for="contatoMensagem">Mensagem:</label>
+                        <textarea name="contato-mensagem" id="contatoMensagem" rows="5" required
+                            minlength="5"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar</button>
+                    </p>
+
+                </form>
+
+
+            </article>
+
+            <!-- Conteúdo complementar -->
+            <aside>
+                <h3>+ Contatos</h3>
+                <p>Fale conosco pelas redes sociais</p>
+                <ul>
+                    <li><a href="https://facebook.com">
+                            <i class="fa-brands fa-square-facebook fa-fw"></i>
+                            <span>Facebook</span>
+                        </a></li>
+                    <li><a href="https://instagram.com">
+                            <i class="fa-brands fa-square-instagram fa-fw"></i>
+                            <span>Instagram</span>
+                        </a></li>
+                    <li><a href="https://toutube.com">
+                            <i class="fa-brands fa-square-youtube fa-fw"></i>
+                            <span>Youtube</span>
+                        </a></li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <!-- rodapé -->
+        <footer>
+            <a href="index.html" title="Ir para a página inicial"><i class="fa-solid fa-house fa-fw"></i></a>
+            <div>&copy; 2026 Joca da Silva</div>
+            <a href="#top" title="Ir para o topo da página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
